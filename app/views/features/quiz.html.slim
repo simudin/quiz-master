@@ -1,0 +1,14 @@
+- if @question
+  p
+    strong Question:
+    = @question.content.html_safe
+- else
+  p
+    ' Sorry, no questions for now, Please create the questions in
+    = link_to " Manage Questions", questions_path
+
+= form_tag check_answer_question_path(@question) do
+  .field
+    = label_tag :answer
+    = text_field_tag "question[answer]", nil, required: true
+  .actions = submit_tag "WATAAA!"

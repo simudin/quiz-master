@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :set_question, only: [:show, :edit, :update, :destroy]
+  before_action :set_question, only: [:show, :edit, :update, :destroy, :check_answer]
 
   # GET /questions
   # GET /questions.json
@@ -58,6 +58,35 @@ class QuestionsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to questions_url, notice: 'Question was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def check_answer
+    result = @question.check_answer(question_params[:answer])
+    next_question = false
+    case result
+    when 1.0
+      flash[:success] = "You are right!"
+      next_question = true
+    when 0.99...1.0
+      flash[:success] = "You are right!, It's #{@question.answer} more precise"
+      next_question = true
+    when 0.8...0.99
+      flash[:alert] = "It's close! Try again."
+      next_question = false
+    else
+      flash[:alert] = "Sorry, wrong answer!"
+      next_question = false
+    end
+    if next_question
+      if @question.next
+        redirect_to features_quiz_path(id: @question.next)
+      else
+        flash[:success] = "You finish the quiz!"
+        redirect_to features_score_path
+      end
+    else
+      redirect_to features_quiz_path(id: @question)
     end
   end
 

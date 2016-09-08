@@ -26,12 +26,12 @@ html lang="en"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#"QuizMaster
+          = link_to "QuizMaster", root_path, class: "navbar-brand"
           .navbar-collapse.collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
+              li= link_to "Take The Quiz", features_quiz_path
               li= link_to "Manage Questions", questions_path
-              li= link_to "Take The Quiz", "/path2"
-              li= link_to "Link 3", "/path3"
+
 
     .container
       .row
@@ -48,4 +48,4 @@ html lang="en"
         /       li= link_to "Link 3", "/path3"
 
       footer
-        p &copy; Company 2016
+        p &copy; QuizMaster 2016
