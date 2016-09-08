@@ -1,8 +1,6 @@
-p#notice = notice
-
 p
   strong Content:
-  = @question.content
+  = @question.content.html_safe
 p
   strong Answer:
   = @question.answer

@@ -12,12 +12,12 @@ table
   tbody
     - @questions.each do |question|
       tr
-        td = question.content
+        td = question.content.html_safe
         td = question.answer
         td = link_to 'Show', question
-        td = link_to 'Edit', edit_question_path(question)
+        td = link_to 'Edit', edit_question_path(question), 'data-turbolinks' => false
         td = link_to 'Destroy', question, data: { confirm: 'Are you sure?' }, method: :delete
 
 br
 
-= link_to 'New Question', new_question_path
+= link_to 'New Question', new_question_path, 'data-turbolinks' => false
