@@ -62,31 +62,22 @@ class QuestionsController < ApplicationController
   end
 
   def check_answer
-    result = @question.check_answer(question_params[:answer])
-    next_question = false
-    case result
-    when 1.0
-      flash[:success] = "You are right!"
-      next_question = true
-    when 0.99...1.0
-      flash[:success] = "You are right!, It's #{@question.answer} more precise"
-      next_question = true
-    when 0.8...0.99
-      flash[:alert] = "It's close! Try again."
-      next_question = false
-    else
-      flash[:alert] = "Sorry, wrong answer!"
-      next_question = false
-    end
-    if next_question
+    score = ScoreService.new({right_answer: @question.answer, answer: question_params[:answer]}).check_score
+    result = CheckScoreService.new({score: score, answer: @question.answer})
+    result.get_properties
+
+    if result.next_question
       if @question.next
+        flash[:success] = result.message
         redirect_to features_quiz_path(id: @question.next)
       else
         flash[:success] = "You finish the quiz!"
         redirect_to features_score_path
       end
     else
-      redirect_to features_quiz_path(id: @question)
+      flash[:alert] = result.message
+      session[:lives] -= 1
+      redirect_to session[:lives] <= 0 ? features_game_over_path : features_quiz_path(id: @question)
     end
   end
 
