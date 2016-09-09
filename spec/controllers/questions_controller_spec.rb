@@ -105,7 +105,6 @@ RSpec.describe QuestionsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        # skip("Add a hash of attributes valid for your model")
         {content: '1 + 1 = ?', answer: '2'}
       }
 
@@ -159,4 +158,73 @@ RSpec.describe QuestionsController, type: :controller do
     end
   end
 
+  describe "POST #check_answer" do
+    let(:question_attributes_with_number) {
+        {content: '1 + 1 = ?', answer: '2'}
+      }
+    let(:question_attributes_with_words){
+      {content: 'Who is the president of Indonesia?', answer: 'Joko Widodo'}
+    }
+    context "with right answer" do
+      it "check the right number with word" do
+        question_with_number = Question.create! question_attributes_with_number
+        next_question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question_with_number.id, question: {answer: "two"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: next_question))
+      end
+
+      it "check the right number with number" do
+        question_with_number = Question.create! question_attributes_with_number
+        next_question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question_with_number.id, question: {answer: "2"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: next_question))
+      end
+
+      it "check the right words" do
+        question_with_number = Question.create! question_attributes_with_words
+        next_question = Question.create! question_attributes_with_number
+        post :check_answer, params: {id: question_with_number.id, question: {answer: "Joko widodo"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: next_question))
+      end
+
+      it "check the right words with corrected answer" do
+        question_with_number = Question.create! question_attributes_with_words
+        next_question = Question.create! question_attributes_with_number
+        post :check_answer, params: {id: question_with_number.id, question: {answer: "Joko widod"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: next_question))
+      end
+    end
+
+    context "with wrong answer" do
+      it "check the close answer" do
+        session[:lives] = 3
+        question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question.id, question: {answer: "Joko wid"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: question))
+      end
+
+      it "check the wrong answer" do
+        session[:lives] = 3
+        question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question.id, question: {answer: "Harambe"}}, session: valid_session
+        expect(response).to redirect_to(features_quiz_path(id: question))
+      end
+    end
+
+    context "final state of quiz" do
+      it "game over" do
+        session[:lives] = 1
+        question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question.id, question: {answer: "Harambe"}}, session: valid_session
+        expect(response).to redirect_to(features_game_over_path)
+      end
+
+      it "check the wrong answer" do
+        session[:lives] = 3
+        question = Question.create! question_attributes_with_words
+        post :check_answer, params: {id: question.id, question: {answer: "Joko Widodo"}}, session: valid_session
+        expect(response).to redirect_to(features_score_path)
+      end
+    end
+  end
 end
