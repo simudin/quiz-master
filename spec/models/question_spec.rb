@@ -8,5 +8,11 @@ RSpec.describe Question, type: :model do
     end
     it { is_expected.to validate_presence_of(:content) }
     it { is_expected.to validate_presence_of(:answer) }
+
+    it "get to next question" do
+      question1 = create(:question)
+      question2 = create(:question)
+      expect(question1.next).to eq(question2)
+    end
   end
 end
