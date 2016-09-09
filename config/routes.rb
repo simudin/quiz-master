@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'features/dashboard'
   get 'features/quiz'
   get 'features/score'
+  get 'features/game_over'
 
   resources :questions do
     member do
