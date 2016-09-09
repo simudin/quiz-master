@@ -1,3 +1,5 @@
-h1 Greetings, Quiz Master!
-p Let's beat the quiz with your awesome Kung-fu!
-= link_to "Wata!", features_quiz_path, class: "btn button-default"
+.jumbotron
+  h2 Greetings, Young Warrior!
+  p Let's take a journey to show us that you are the real Quiz Master that we are looking for!
+  p = "But, remember! You only have #{@lives} lives for this journey, if you lost them. It will be over!"
+  = link_to "Let's do this!", features_quiz_path, class: "btn btn-primary btn-lg"
