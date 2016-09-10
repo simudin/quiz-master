@@ -219,7 +219,7 @@ RSpec.describe QuestionsController, type: :controller do
         expect(response).to redirect_to(features_game_over_path)
       end
 
-      it "check the wrong answer" do
+      it "finish the quiz" do
         session[:lives] = 3
         question = Question.create! question_attributes_with_words
         post :check_answer, params: {id: question.id, question: {answer: "Joko Widodo"}}, session: valid_session
