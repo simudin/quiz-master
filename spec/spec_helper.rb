@@ -20,8 +20,11 @@ require 'factory_girl_rails'
 require 'capybara/rspec'
 require 'support/factory_girl'
 require 'simplecov'
+require 'rack_session_access/capybara'
 SimpleCov.start
 
+
+ 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
