@@ -3,5 +3,10 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+  questions = Question.create([{ content: 'Who is the president of Indonesia?', answer: 'Joko Widodo'}, { content: '5 x 5 = ?', answer: '25'}])
+  puts "Default questions created."
+  Question.all.each do |question|
+  	puts "Content: #{question.content}"
+  	puts "Answer: #{question.answer}"
+  	puts "=============================="
+  end
