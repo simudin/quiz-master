@@ -9,7 +9,6 @@ class FeaturesController < ApplicationController
   end
 
   def score
-    
   end
 
   def game_over

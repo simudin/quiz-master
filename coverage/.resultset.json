@@ -353,14 +353,6 @@
         1,
         null
       ],
-      "/home/studio/hasim/gawe/quiz-master/app/helpers/features_helper.rb": [
-        1,
-        null
-      ],
-      "/home/studio/hasim/gawe/quiz-master/app/helpers/questions_helper.rb": [
-        1,
-        null
-      ],
       "/home/studio/hasim/gawe/quiz-master/spec/factories/questions.rb": [
         1,
         1,
@@ -419,7 +411,6 @@
         null,
         null,
         1,
-        null,
         null,
         null,
         1,
@@ -741,18 +732,14 @@
         null,
         null,
         1,
+        null,
         8,
         8,
         8,
         null,
         8,
         5,
-        4,
-        4,
-        null,
-        1,
-        1,
-        null,
+        5,
         null,
         3,
         3,
@@ -813,7 +800,7 @@
         1,
         null,
         1,
-        10,
+        15,
         null,
         null
       ],
@@ -873,20 +860,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/home/studio/hasim/gawe/quiz-master/spec/views/features/dashboard.html.slim_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/studio/hasim/gawe/quiz-master/spec/views/features/quiz.html.slim_spec.rb": [
-        1,
-        null,
-        1,
-        1,
         null
       ],
       "/home/studio/hasim/gawe/quiz-master/spec/views/questions/edit.html.slim_spec.rb": [
@@ -1043,6 +1016,6 @@
         null
       ]
     },
-    "timestamp": 1473481644
+    "timestamp": 1473483259
   }
 }

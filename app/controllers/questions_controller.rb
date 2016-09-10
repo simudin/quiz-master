@@ -62,18 +62,14 @@ class QuestionsController < ApplicationController
   end
 
   def check_answer
+    #Check app/services folder for this codes
     score = ScoreService.new({right_answer: @question.answer, answer: question_params[:answer]}).check_score
-    result = CheckScoreService.new({score: score, answer: @question.answer})
+    result = CheckScoreService.new({score: score, right_answer: @question.answer})
     result.get_properties
 
     if result.next_question
-      if @question.next
-        flash[:success] = result.message
-        redirect_to features_quiz_path(id: @question.next)
-      else
-        flash[:success] = "You finish the quiz!"
-        redirect_to features_score_path
-      end
+      flash[:success] = @question.next ? result.message : "You finish the quiz!"
+      redirect_to @question.next ? features_quiz_path(id: @question.next) : features_score_path
     else
       flash[:alert] = result.message
       session[:lives] -= 1

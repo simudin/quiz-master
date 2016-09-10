@@ -13,7 +13,7 @@ class CheckScoreService
       @message = "You are right!"
       @next_question = true
     when 0.99...1.0
-      @message = "You are right!, It's #{@answer} more precise"
+      @message = "You are right!, It's #{@right_answer} more precise"
       @next_question = true
     when 0.8...0.99
       @message = "It's close! Try again."
