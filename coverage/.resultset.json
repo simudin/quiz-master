@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/simudin/gawe/quiz_master/spec/controllers/features_controller_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/controllers/features_controller_spec.rb": [
         1,
         null,
         1,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/rails_helper.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -89,14 +89,14 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/environment.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/simudin/gawe/quiz_master/config/application.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/application.rb": [
         1,
         null,
         1,
@@ -125,12 +125,12 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/boot.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/simudin/gawe/quiz_master/config/environments/test.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/environments/test.rb": [
         1,
         null,
         null,
@@ -174,7 +174,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/application_controller_renderer.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -182,7 +182,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/assets.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -196,7 +196,7 @@
         null,
         1
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/backtrace_silencers.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -205,7 +205,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/ckeditor.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/ckeditor.rb": [
         null,
         1,
         null,
@@ -248,37 +248,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/simudin/gawe/quiz_master/config/initializers/cookies_serializer.rb": [
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/home/simudin/gawe/quiz_master/config/initializers/filter_parameter_logging.rb": [
-        null,
-        null,
-        null,
-        1
-      ],
-      "/home/simudin/gawe/quiz_master/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -296,13 +265,44 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/mime_types.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/new_framework_defaults.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/new_framework_defaults.rb": [
         null,
         null,
         null,
@@ -328,12 +328,12 @@
         null,
         1
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/session_store.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/home/simudin/gawe/quiz_master/config/initializers/wrap_parameters.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -349,19 +349,19 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/helpers/application_helper.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/helpers/features_helper.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/helpers/features_helper.rb": [
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/helpers/questions_helper.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/helpers/questions_helper.rb": [
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/factories/questions.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/factories/questions.rb": [
         1,
         1,
         4,
@@ -369,7 +369,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/config/routes.rb": [
+      "/home/studio/hasim/gawe/quiz-master/config/routes.rb": [
         1,
         1,
         null,
@@ -387,7 +387,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/support/database_cleaner.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/support/database_cleaner.rb": [
         1,
         null,
         1,
@@ -407,8 +407,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/controllers/features_controller.rb": [
-        1,
+      "/home/studio/hasim/gawe/quiz-master/app/controllers/features_controller.rb": [
         1,
         1,
         1,
@@ -422,10 +421,15 @@
         1,
         null,
         null,
+        null,
         1,
         null,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
         1,
         2,
         null,
@@ -435,12 +439,12 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/controllers/application_controller.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/controllers/questions_controller_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/controllers/questions_controller_spec.rb": [
         1,
         null,
         null,
@@ -672,7 +676,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/controllers/questions_controller.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/controllers/questions_controller.rb": [
         1,
         1,
         null,
@@ -768,7 +772,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/features/questions/create_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/features/questions/create_spec.rb": [
         1,
         null,
         1,
@@ -784,7 +788,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/models/question_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -804,7 +808,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/models/question.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/models/question.rb": [
         1,
         1,
         null,
@@ -813,12 +817,12 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/models/application_record.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/requests/questions_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/requests/questions_spec.rb": [
         1,
         null,
         1,
@@ -830,7 +834,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/routing/questions_routing_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/routing/questions_routing_spec.rb": [
         1,
         null,
         1,
@@ -871,68 +875,21 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/views/features/dashboard.html.slim_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/simudin/gawe/quiz_master/spec/views/features/quiz.html.slim_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/views/features/dashboard.html.slim_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/views/questions/edit.html.slim_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/views/features/quiz.html.slim_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/views/questions/index.html.slim_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/simudin/gawe/quiz_master/spec/views/questions/new.html.slim_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/views/questions/edit.html.slim_spec.rb": [
         1,
         null,
         1,
@@ -955,7 +912,54 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/spec/views/questions/show.html.slim_spec.rb": [
+      "/home/studio/hasim/gawe/quiz-master/spec/views/questions/index.html.slim_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/studio/hasim/gawe/quiz-master/spec/views/questions/new.html.slim_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/studio/hasim/gawe/quiz-master/spec/views/questions/show.html.slim_spec.rb": [
         1,
         null,
         1,
@@ -973,7 +977,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/services/score_service.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/services/score_service.rb": [
         1,
         1,
         8,
@@ -1008,7 +1012,7 @@
         null,
         null
       ],
-      "/home/simudin/gawe/quiz_master/app/services/check_score_service.rb": [
+      "/home/studio/hasim/gawe/quiz-master/app/services/check_score_service.rb": [
         1,
         1,
         1,
@@ -1039,6 +1043,6 @@
         null
       ]
     },
-    "timestamp": 1473464945
+    "timestamp": 1473481644
   }
 }

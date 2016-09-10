@@ -20,7 +20,7 @@ class ScoreService
     def change_to_words(param)
       param_array = param.downcase.split(" ")
       param_array.map! do |val|
-        numeric?(val) ? val.to_f.to_words : val
+        numeric?(val) ? val.to_f.to_words(remove_hyphen: true) : val
       end
       param = param_array.join(" ")
     end
