@@ -21,4 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+To Run this App:
+
+* bundle install
+
+* rake db:create
+
+* rake db:migrate
+
+* rake db:seed
