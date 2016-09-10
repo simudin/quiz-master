@@ -1,6 +1,6 @@
 h1 Listing questions
 
-table
+table.table.table-bordered
   thead
     tr
       th Content
@@ -14,10 +14,10 @@ table
       tr
         td = question.content.html_safe
         td = question.answer
-        td = link_to 'Show', question
-        td = link_to 'Edit', edit_question_path(question), 'data-turbolinks' => false
-        td = link_to 'Destroy', question, data: { confirm: 'Are you sure?' }, method: :delete
+        td = link_to 'Show', question, class: "btn btn-default"
+        td = link_to 'Edit', edit_question_path(question), 'data-turbolinks' => false, class: "btn btn-default"
+        td = link_to 'Destroy', question, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-danger"
 
 br
 
-= link_to 'New Question', new_question_path, 'data-turbolinks' => false
+= link_to 'New Question', new_question_path, 'data-turbolinks' => false, class: "btn btn-primary"

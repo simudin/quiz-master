@@ -13,6 +13,8 @@ To Run this App:
 
 * rake db:seed
 
+* rails s
+
 Things you may want to cover:
 
 * Ruby version

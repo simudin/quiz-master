@@ -20,32 +20,25 @@ html lang="en"
 
 
   body
-    .navbar.navbar-default.navbar-static-top
-        .container
-          button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse"
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          = link_to "QuizMaster", root_path, class: "navbar-brand"
-          .navbar-collapse.collapse.navbar-responsive-collapse
-            ul.nav.navbar-nav
-              li= link_to "Take The Quiz", features_quiz_path
-              li= link_to "Manage Questions", questions_path
-
+    nav.navbar.navbar-default role="navigation"
+      /! Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle data-target="#navbarCollapse" data-toggle="collapse" type="button" 
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to "QuizMaster", root_path, class: "navbar-brand"
+      /! Collection of nav links and other content for toggling
+      #navbarCollapse.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li= link_to "Take The Quiz", features_quiz_path
+          li= link_to "Manage Questions", questions_path
 
     .container
       .row
         .col-lg-12
           = bootstrap_flash
           = yield
-        / .col-lg-3
-        /   .well.sidebar-nav
-        /     h3 Sidebar
-        /     ul.nav.nav-list
-        /       li.nav-header Sidebar
-        /       li= link_to "Link 1", "/path1"
-        /       li= link_to "Link 2", "/path2"
-        /       li= link_to "Link 3", "/path3"
-
       footer
         p &copy; QuizMaster 2016

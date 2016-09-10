@@ -1,4 +1,4 @@
-= form_for @question do |f|
+= form_for @question, class: "form-horizontal" do |f|
   - if @question.errors.any?
     #error_explanation
       h2 = "#{pluralize(@question.errors.count, "error")} prohibited this question from being saved:"
@@ -6,11 +6,15 @@
         - @question.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :content
+  .field.form-group
+    = f.label :content, class: "control-label col-xs-2"
     / = f.text_area :content
-    = f.cktext_area :content
-  .field
-    = f.label :answer
-    = f.text_field :answer
-  .actions = f.submit
+    .col-xs-10
+      = f.cktext_area :content
+
+  .field.form-group
+    = f.label :answer, class: "control-label col-xs-2"
+    .col-xs-10
+      = f.text_field :answer, placeholder: "Write your answer here", class: "form-control"
+  .form-group
+    .action = f.submit class: "btn btn-primary"
